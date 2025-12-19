@@ -42,7 +42,7 @@ function App() {
   const pending = total - completed;
 
   return (
-    <div>
+    <>
       <header className="header-container">
         <h1>Habit Tracker</h1>
       </header>
@@ -73,10 +73,10 @@ function App() {
       </main>
 
       <footer className="footer-container">
-        <p>© 2025 Habit Tracker App</p>
+        <p>© Habit Tracker</p>
       </footer>
-
-    </div>
+    
+    </>  
   )
 }
 
