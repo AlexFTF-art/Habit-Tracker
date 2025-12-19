@@ -1,3 +1,5 @@
+import "./HabitList.css"
+
 // Objetivos:
 // Recibir habitos
 // Renderizar un HabitItem por cada hábito
@@ -6,7 +8,7 @@ import HabitItem from "../HabitItem/HabitItem"
 
 function HabitList ({ habits, onToggleHabit, onDeleteHabit}) {
   return (
-    <ul>
+    <ul className="list-container">
       {habits.map((habit) => (
         <HabitItem
           key= {habit.id}

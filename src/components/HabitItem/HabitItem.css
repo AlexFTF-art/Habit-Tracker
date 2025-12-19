@@ -3,20 +3,39 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 0.75rem;
+  margin-top: 10px;
   border-bottom: 1px solid #eee;
   font-size: 1rem;
-}
-
-.habit-item span {
   cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  background-color: #d1c9c9;
+  border-radius: 25px;
+}
+
+.habit-item:hover {
+  background-color: #dcdcdc;
+}
+
+.habit-name {
+  font-size: 1rem;
+  color: #333;
   transition: color 0.2s, text-decoration 0.2s;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 80%;
 }
 
-.habit-item span:hover {
-  color: #3498db;
+.habit-item.completed .habit-name {
+  text-decoration: line-through;
+  color: #ffffff;
 }
 
-.habit-item button {
+.habit-item.completed {
+  background-color: #777171;
+}
+
+.habit-delete-btn {
+  text-align: center;
   background-color: #e74c3c;
   color: #fff;
   border: none;
@@ -28,6 +47,6 @@
   transition: background-color 0.2s;
 }
 
-.habit-item button:hover {
+.habit-delete-btn:hover {
   background-color: #c0392b;
 }

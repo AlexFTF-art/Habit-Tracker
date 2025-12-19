@@ -5,19 +5,27 @@
 
 import "./HabitItem.css";
 
-function HabitItem({habit, onToggle, onDelete}) {
+function HabitItem({ habit, onToggle, onDelete }) {
   return (
-    <li className="habit-item">
-    <span className={habit.completed?"completed": ""}
-      onClick={() => onToggle(habit.id)}
-      style={{textDecoration: habit.completed ? "line-through" : "none", cursor: "pointer"}}>
+    <li className={`habit-item ${habit.completed ? "completed" : ""}`}
+        onClick={() => onToggle(habit.id)}>
+      <div
+        className="habit-name"
+      >
+        
         {habit.name}
-    </span>
+      </div>
 
-    <button onClick={() => onDelete(habit.id)}>X</button>
-
+      <div
+        className="habit-delete-btn"
+        onClick={(e) => {
+          e.stopPropagation();
+          onDelete(habit.id)
+        }}
+      >
+        X
+      </div>
     </li>
-    
   );
 }
 
