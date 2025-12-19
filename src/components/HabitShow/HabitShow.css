@@ -1,0 +1,32 @@
+.habitShow{
+  margin:1.5rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f0fef8;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.show-item{
+  font: 0.95rem;
+}
+
+.show-item span{
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+.show-total span{
+  color: #3f2b2b;
+}
+
+.show-completada span {
+  color: #58337c;
+}
+
+.show-pendiente span {
+  color: rgb(168, 118, 43);
+}
+
