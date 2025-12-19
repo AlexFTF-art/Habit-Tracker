@@ -1,10 +1,10 @@
 .habit-empty {
   text-align: center;
-  color: black;
-  font-style: italic;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   padding: 1rem;
-  background-color: #e28080;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 190, 190, 0.85);
+  color: #5a1a1a;
+  border-radius: 12px;
+  font-style: italic;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
