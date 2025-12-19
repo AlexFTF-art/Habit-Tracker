@@ -1,0 +1,21 @@
+.habit-show {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0 0 1.5rem 0;
+  background-color: #58a9b3;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  transition: color 0.2s;
+}
+
+
+.habit-completed {
+  color: #0cc95b;
+}
+
+.habit-pending {
+  color: #d48318;
+}
