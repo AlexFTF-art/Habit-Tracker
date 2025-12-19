@@ -3,10 +3,10 @@
   justify-content: space-around;
   padding: 0.75rem 1rem;
   margin-bottom: 0 0 1.5rem 0;
-  background-color: #58a9b3;
+  background-color: #333b3450;
   border-radius: 10px;
   font-weight: bold;
-  color: white;
+  color: rgb(20, 19, 19);
   margin: 0;
   transition: color 0.2s;
 }
@@ -17,5 +17,5 @@
 }
 
 .habit-pending {
-  color: #d48318;
+  color: #d87627;
 }

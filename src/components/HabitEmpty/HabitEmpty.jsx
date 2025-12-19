@@ -1,6 +1,9 @@
+import "./HabitEmpty.css";
+
+
 function HabitEmpty (){
   return(
-  <p>
+  <p className="habit-empty">
     No hay habitos aun
   </p>
   );
