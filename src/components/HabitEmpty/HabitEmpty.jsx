@@ -1,7 +1,7 @@
 function HabitEmpty (){
   return(
   <p>
-    No hay habitos aun. ¡Agrega uno!
+    No hay habitos aun.
   </p>
   );
 }
