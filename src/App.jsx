@@ -1,7 +1,9 @@
 import { useState } from "react"
+import "./App.css";
 import HabitForm from "./components/HabitForm/HabitForm"
 import HabitList from "./components/HabitList/HabitList"
-import "./App.css";
+import HabitShow from "./components/HabitShow/HabitShow";
+import HabitEmpty from "./components/HabitEmpty/HabitEmpty";
 
 const savedHabits = localStorage.getItem("habits");
 const initHabits = savedHabits ? JSON.parse(savedHabits) : [];
@@ -40,26 +42,25 @@ function App() {
   const pending = total - completed;
 
   return (
-    <div className="App">
-      <header>
+    <div>
+      <header className="header-container">
         <h1>Habit Tracker</h1>
       </header>
 
-      <main>
+      <main className="main-container">
 
         <HabitForm addHabit={addHabit}/>
 
         {total === 0 ? (
-          // Espacio para HabitEmpty
-          <p>No hay hábitos</p>
+          <HabitEmpty/>
         ) : ( 
           <>
-            {/* Espacio para habitShow */}
-            <div className="habit-summary">
-              <p>Total: {total}</p>
-              <p>Completados: {completed}</p>
-              <p>Pendientes: {pending}</p>
-            </div>
+            
+            <HabitShow
+            total={total}
+            completada={completed}
+            pendiente={pending}
+          />
 
             <HabitList 
               habits={habits}
@@ -71,7 +72,7 @@ function App() {
 
       </main>
 
-      <footer>
+      <footer className="footer-container">
         <p>© 2025 Habit Tracker App</p>
       </footer>
 

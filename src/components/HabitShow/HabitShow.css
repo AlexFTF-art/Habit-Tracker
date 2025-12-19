@@ -1,32 +1,21 @@
-.habitShow{
-  margin:1.5rem 0;
-  padding: 1rem;
-  border-radius: 8px;
-  background-color: #f0fef8;
+.habit-show {
   display: flex;
   justify-content: space-around;
-  text-align: center;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0 0 1.5rem 0;
+  background-color: #333b3450;
+  border-radius: 10px;
+  font-weight: bold;
+  color: rgb(20, 19, 19);
+  margin: 0;
+  transition: color 0.2s;
 }
 
-.show-item{
-  font: 0.95rem;
+
+.habit-completed {
+  color: #0cc95b;
 }
 
-.show-item span{
-  display: block;
-  font-size: 1.4rem;
-  font-weight: bolder;
+.habit-pending {
+  color: #d87627;
 }
-
-.show-total span{
-  color: #3f2b2b;
-}
-
-.show-completada span {
-  color: #58337c;
-}
-
-.show-pendiente span {
-  color: rgb(168, 118, 43);
-}
-

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./HabitForm.css"
 
 function HabitForm({addHabit}) {
   const [name, setName] = useState("");
@@ -6,15 +7,15 @@ function HabitForm({addHabit}) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if(name.trim() === "") return;
-
     addHabit(name);
     setName("");
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="habit-input">Escribe una Habito</label>
-      <input 
+    <form onSubmit={handleSubmit} className="habit-form">
+      <label htmlFor="habit-input" className="habit-label">Escribe un Habito</label>
+      <input
+        className="habit-input"
         id="habit-input"
         type="text"
         placeholder="Escribe aqui..."
@@ -22,7 +23,7 @@ function HabitForm({addHabit}) {
         onChange={(e) => setName(e.target.value)}
       />
 
-      <button type="submit">Agregar</button>
+      <button type="submit" className="habit-btn">Agregar</button>
     </form>
   );
 
