@@ -1,0 +1,33 @@
+.habit-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+
+.habit-item span {
+  cursor: pointer;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+
+.habit-item span:hover {
+  color: #3498db;
+}
+
+.habit-item button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.habit-item button:hover {
+  background-color: #c0392b;
+}
